@@ -8,7 +8,9 @@
 
 # **Project Title**
  
-**基于Vue2.0的GPTweb客户端
+**基于Vue2.0的GPTweb客户端**
+
+**Demo地址：https://gptai.v-wim.xyz**   
  
 ## Getting Started  
 
@@ -58,7 +60,7 @@ App running at:
  
 ## Express gratitude
  
- **后端地址 [GPT-WEB-JAVA](https://github.com/a616567126/GPT-WEB-JAVA) 基于JDK17 可以的话点个Star**  
+ **后端地址 [GPT-WEB-JAVA](https://github.com/a616567126/GPT-WEB-JAVA) 基于Spring boot Mybatis-plus 可以的话点个Star**  
  
  
  
@@ -89,8 +91,16 @@ App running at:
 ## 记得点一个Star哦!!!!
 
 
+## 加入微信群
+<img width="668" alt="WeChata653a42d1eb1aed3137c0c30e3ed1b92" src="https://user-images.githubusercontent.com/43660702/228197837-21fabf93-477a-47a1-afdc-6de427679ac1.png">
+
+
+## 关注公众号
+![关注公众号](https://user-images.githubusercontent.com/43660702/229270101-4f11a841-51fc-4625-b498-833629fe7934.png)
+
+
 [![Star History Chart](https://api.star-history.com/svg?repos=a616567126/GPT-WEB-CLIENT&type=Timeline)](https://star-history.com/#a616567126/GPT-WEB-CLIENT&Timeline)
 
 ## License
 
-AGPL-3.0 License
+Apache License 2.0
