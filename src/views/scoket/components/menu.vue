@@ -4,21 +4,20 @@
  * @Author: smallWhite
  * @Date: 2023-03-23 20:34:36
  * @LastEditors: smallWhite
- * @LastEditTime: 2023-04-04 08:53:31
- * @FilePath: /chat_gpt/src/views/user/components/menu.vue
+ * @LastEditTime: 2023-04-06 17:32:10
+ * @FilePath: /chat_gpt/src/views/scoket/components/menu.vue
 -->
 <template>
   <div>
-
     <div class="menu_box"
       :class="{'phone':phone?true:false}"
       style="padding:20px">
-      <el-button
+      <!-- <el-button
         type="primary"
         style="width: 100%;"
         @click="addList"
         plain>Add
-        Chat</el-button>
+        Chat</el-button> -->
       <div class="btnx"
         :class="{active:isActive === index}"
         v-for="(item,index) in chatList"
@@ -30,8 +29,8 @@
         </div>
         <div>
           <input class="input"
-            :disabled="item.disabled"
-            v-model="item.name" />
+            :disabled="true"
+            v-model="item.question" />
         </div>
         <div class="edit">
           <!-- <i class="el-icon-edit-outline"
@@ -116,7 +115,6 @@ export default {
   mounted() {
     this.phone = JSON.parse(window.localStorage.getItem('phone'))
     setTimeout(() => {
-      console.log(this.$store.state, '00')
       this.userInfos = this.userInfo
       this.userInfos.remainingTimes = this.$store.state.total
     }, 2000)
@@ -151,22 +149,18 @@ export default {
         this.$alert('请先充值，然后进行对话', '提示')
       } else {
         const obj = {
-          disabled: true,
-          name: 'New Chat',
-          chatLists: []
+          question: '',
+          answer: ''
         }
         this.title = ''
-        this.chatList.unshift(obj)
-        this.$emit('addList', this.chatList)
+        this.$emit('addList', obj)
         this.$emit('close', false)
       }
     },
 
     openWindow(item, index) {
-      console.log(item, '000')
       this.isActive = index
-      this.chatLists = item.chatLists
-      this.$emit('changeChat', { data: item, show: false })
+      this.$emit('changeChat', { data: index, show: false })
     },
     del(item, index) {
       this.chatList.splice(index, 1)

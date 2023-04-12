@@ -49,6 +49,13 @@
 
 **3.npm run dev**  
 
+
+## Error
+**出现443 类似这种异常可配置代理控制台运行：npm config set registry https://registry.npm.taobao.org**
+
+**出现如下错误控制台运行：npm install marked highlight.js**
+<img width="1434" alt="image" src="https://user-images.githubusercontent.com/43660702/229968709-3ac2e11a-c24a-40f1-baf7-e02188c10929.png">
+
        
 ## Running the tests
  
@@ -92,7 +99,8 @@ App running at:
 
 
 ## 加入微信群
-<img width="668" alt="WeChata653a42d1eb1aed3137c0c30e3ed1b92" src="https://user-images.githubusercontent.com/43660702/228197837-21fabf93-477a-47a1-afdc-6de427679ac1.png">
+![image](https://user-images.githubusercontent.com/43660702/230708891-c669131d-923d-425a-9ad3-629670c19638.png)
+
 
 
 ## 关注公众号
